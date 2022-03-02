@@ -27,8 +27,18 @@ public class TicTacToeGame extends Observable {
         notifyObservers();
     }
 
-    public State getStateAtIdx(int i) {
+    public State getStateAtPos(int i) {
         return board[i];
+    }
+
+    public void print() {
+        for (int o=0;o<bsize*bsize;o+=bsize) {
+            System.out.println("[ " + board[o].str() + " " + board[o+1].str() + " " + board[o+1].str() + " ]");
+        }
+    }
+
+    public State getStateAtPos(int x, int y) {
+        return board[y * bsize + x];
     }
 
     public State gameWon() { // Returns the winner, or Empty if CAT game, null if board not full.
@@ -50,12 +60,15 @@ public class TicTacToeGame extends Observable {
     }
 
     public enum State {
-        X, O, Empty;
+        X("X"), O("O"), Empty("-");
+        private String str;
+        State(String s) { str = s; }
+        public String str() { return str; }
     }
 
     public class IllegalMoveException extends Exception {
         public IllegalMoveException(int x, int y, State s, TicTacToeGame game) {
-            super(x + ", " + y + ": " + s.toString());
+            super(x + ", " + y + ": " + s.name());
         }
     }
 }

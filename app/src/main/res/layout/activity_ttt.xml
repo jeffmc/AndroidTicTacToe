@@ -25,18 +25,17 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/button00"
                 style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="V"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="96sp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button00"
+                android:id="@+id/button10"
                 style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -63,16 +62,6 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button21"
-                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="96sp"
-                android:textStyle="bold" />
-
-            <Button
                 android:id="@+id/button01"
                 style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
                 android:layout_width="match_parent"
@@ -91,16 +80,9 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="96sp"
                 android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/row2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
 
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/button21"
                 style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -108,6 +90,14 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="96sp"
                 android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button02"
@@ -128,6 +118,17 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="96sp"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button22"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="96sp"
+                android:textStyle="bold" />
+
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
